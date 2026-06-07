@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "year": "2024",
+    "totalStudents": 250,
+    "passed": 245,
+    "percentage": "98%",
+    "toppers": ["Rahul Sharma - 98.6%", "Priya Patel - 97.8%", "Amit Kumar - 97.2%"],
+    "distinctions": 180
+  },
+  {
+    "id": 2,
+    "year": "2023",
+    "totalStudents": 220,
+    "passed": 212,
+    "percentage": "96.4%",
+    "toppers": ["Amit Kumar - 97.5%", "Neha Gupta - 96.8%", "Vikash Singh - 96.5%"],
+    "distinctions": 155
+  },
+  {
+    "id": 3,
+    "year": "2022",
+    "totalStudents": 200,
+    "passed": 190,
+    "percentage": "95%",
+    "toppers": ["Vikash Singh - 96.2%", "Sneha Reddy - 95.8%", "Rohit Sharma - 95.5%"],
+    "distinctions": 140
+  }
+]

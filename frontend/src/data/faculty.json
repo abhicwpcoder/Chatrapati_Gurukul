@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Rajesh Kumar",
+    "subject": "Mathematics",
+    "experience": "15+ Years",
+    "qualification": "Ph.D. Mathematics (IIT Delhi)",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "bio": "Former IIT professor with excellence in teaching. Specializes in Calculus and Algebra.",
+    "achievements": ["Published 20+ Research Papers", "Gold Medalist"]
+  },
+  {
+    "id": 2,
+    "name": "Prof. Sunita Sharma",
+    "subject": "Physics",
+    "experience": "12+ Years",
+    "qualification": "M.Sc. Physics (BHU)",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "bio": "Expert in making physics easy and interesting. Specializes in Mechanics and Electrodynamics.",
+    "achievements": ["Best Teacher Award 2022", "Author of Physics Guide"]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Ankit Verma",
+    "subject": "Chemistry",
+    "experience": "10+ Years",
+    "qualification": "Ph.D. Chemistry (IIT Kanpur)",
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "bio": "NEET and JEE specialist with proven track record. Expert in Organic Chemistry.",
+    "achievements": ["1000+ Selections", "Chemistry Olympiad Trainer"]
+  },
+  {
+    "id": 4,
+    "name": "Ms. Priya Singh",
+    "subject": "Biology",
+    "experience": "8+ Years",
+    "qualification": "M.Sc. Botany (DU)",
+    "image": "https://randomuser.me/api/portraits/women/4.jpg",
+    "bio": "Medical entrance expert with 1000+ selections. Specializes in Human Physiology.",
+    "achievements": ["NEET Specialist", "Biology Olympiad Mentor"]
+  }
+]

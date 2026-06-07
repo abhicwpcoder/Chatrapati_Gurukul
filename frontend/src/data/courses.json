@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Mathematics",
+    "grades": "5th-12th",
+    "description": "Comprehensive math training from basics to advanced with problem-solving techniques",
+    "icon": "📐",
+    "features": ["Daily Practice Worksheets", "Weekend Mock Tests", "Doubt Solving Sessions", "Competitive Exam Preparation"]
+  },
+  {
+    "id": 2,
+    "name": "Physics",
+    "grades": "9th-12th",
+    "description": "Conceptual physics with practical approach and numerical mastery",
+    "icon": "⚡",
+    "features": ["Lab Sessions", "Problem Solving Workshops", "Numerical Practice", "JEE/NEET Focus"]
+  },
+  {
+    "id": 3,
+    "name": "Chemistry",
+    "grades": "9th-12th",
+    "description": "In-depth chemistry for board & competitive exams with organic/inorganic focus",
+    "icon": "🧪",
+    "features": ["Periodic Table Mastery", "Reaction Charts", "Mock Tests", "Practical Approach"]
+  },
+  {
+    "id": 4,
+    "name": "Biology",
+    "grades": "9th-12th",
+    "description": "Complete biology for medical aspirants with diagram practice",
+    "icon": "🧬",
+    "features": ["Diagrams Practice", "Theory Coverage", "NEET Focus", "Revision Sessions"]
+  },
+  {
+    "id": 5,
+    "name": "Science",
+    "grades": "5th-8th",
+    "description": "Foundation science for young minds with experiments and projects",
+    "icon": "🔬",
+    "features": ["Hands-on Experiments", "Interactive Learning", "Science Projects", "Quiz Competitions"]
+  },
+  {
+    "id": 6,
+    "name": "English",
+    "grades": "5th-12th",
+    "description": "Grammar, literature & communication skills for overall development",
+    "icon": "📖",
+    "features": ["Vocabulary Building", "Writing Skills", "Spoken English", "Public Speaking"]
+  }
+]
