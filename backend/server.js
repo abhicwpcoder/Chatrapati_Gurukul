@@ -17,16 +17,20 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
-  'https://your-frontend-domain.vercel.app' // Replace with your Vercel URL
+  'https://chatrapati-gurukul.vercel.app/', // Replace with your actual Vercel URL
 ];
 
-// Middleware
 app.use(cors({
   origin: function(origin, callback) {
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      console.log('Origin not allowed:', origin);
+      callback(null, true); // Allow temporarily for testing
+      // callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true

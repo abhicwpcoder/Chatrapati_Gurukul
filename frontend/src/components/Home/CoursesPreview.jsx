@@ -1,17 +1,25 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import axios from 'axios'
 import Card from '../UI/Card'
 import SectionTitle from '../UI/SectionTitle'
-import axios from 'axios'
-import { ArrowRight } from 'lucide-react'
 import API_BASE_URL from '../../config/api'
+import { ArrowRight } from 'lucide-react'
 
 const CoursesPreview = () => {
   const [courses, setCourses] = useState([])
 
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/api/courses`).then(res => setCourses(res.data.slice(0, 4)))
+    const fetchCourses = async () => {
+      try {
+        const response = await axios.get(`${API_BASE_URL}/api/courses`)
+        setCourses(response.data.slice(0, 4))
+      } catch (error) {
+        console.error('Error fetching courses:', error)
+      }
+    }
+    fetchCourses()
   }, [])
 
   return (
@@ -46,4 +54,4 @@ const CoursesPreview = () => {
   )
 }
 
-export default CoursesPreview;
+export default CoursesPreview

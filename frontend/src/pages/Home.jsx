@@ -1,3 +1,7 @@
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
 import Hero from '../components/UI/Hero'
 import SectionTitle from '../components/UI/SectionTitle'
 import Card from '../components/UI/Card'
@@ -6,36 +10,40 @@ import CoursesPreview from '../components/Home/CoursesPreview'
 import HostelPreview from '../components/Home/HostelPreview'
 import StatsSection from '../components/Home/StatsSection'
 import FAQSection from '../components/Home/FAQSection'
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
-import { ArrowRight, Star, Users, Trophy } from 'lucide-react'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
 import API_BASE_URL from '../config/api'
+import { ArrowRight, Star } from 'lucide-react'
 
 const Home = () => {
   const [testimonials, setTestimonials] = useState([])
   const [results, setResults] = useState([])
 
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/api/testimonials`).then(res => setTestimonials(res.data.slice(0, 3)))
-    axios.get(`${API_BASE_URL}/api/results`).then(res => setResults(res.data.slice(0, 3)))
+    // Use the API_BASE_URL from config
+    const fetchData = async () => {
+      try {
+        console.log('Fetching from:', API_BASE_URL);
+        
+        const [testimonialsRes, resultsRes] = await Promise.all([
+          axios.get(`${API_BASE_URL}/api/testimonials`),
+          axios.get(`${API_BASE_URL}/api/results`)
+        ]);
+        
+        setTestimonials(testimonialsRes.data.slice(0, 3));
+        setResults(resultsRes.data.slice(0, 3));
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    
+    fetchData();
   }, [])
 
   return (
     <>
       <Hero />
-      
-      {/* About Preview */}
       <AboutPreview />
-      
-      {/* Courses Preview */}
       <CoursesPreview />
-      
-      {/* Hostel Preview */}
       <HostelPreview />
-      
-      {/* Stats Section */}
       <StatsSection />
       
       {/* Results Section */}
@@ -54,7 +62,7 @@ const Home = () => {
                   <div className="text-gray-600 mt-2">Passing Percentage</div>
                   <div className="mt-4 pt-4 border-t">
                     <div className="text-sm text-gray-500">Top Performers</div>
-                    {result.toppers.map((topper, i) => (
+                    {result.toppers?.map((topper, i) => (
                       <div key={i} className="text-primary-dark font-medium">{topper}</div>
                     ))}
                   </div>
@@ -106,7 +114,6 @@ const Home = () => {
         </div>
       </section>
       
-      {/* FAQ Section */}
       <FAQSection />
       
       {/* CTA Section */}
@@ -135,7 +142,7 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <Link to="/contact" className="gold-gradient text-primary-dark font-semibold px-10 py-4 rounded-full inline-flex items-center gap-2 hover:shadow-lg transition-all">
+            <Link to="/contact" className="bg-gradient-to-r from-yellow-400 to-amber-600 text-primary-dark font-semibold px-10 py-4 rounded-full inline-flex items-center gap-2 hover:shadow-lg transition-all">
               Get Admission Now <ArrowRight size={20} />
             </Link>
           </motion.div>

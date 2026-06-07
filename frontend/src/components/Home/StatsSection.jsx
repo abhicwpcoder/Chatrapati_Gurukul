@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import axios from 'axios'
+import API_BASE_URL from '../../config/api'
 import { Users, BookOpen, Trophy, Award } from 'lucide-react'
 
 const StatsSection = () => {
@@ -10,7 +11,17 @@ const StatsSection = () => {
   const isInView = useInView(ref, { once: true })
 
   useEffect(() => {
-    axios.get('/api/stats').then(res => setStats(res.data))
+    const fetchStats = async () => {
+      try {
+        const response = await axios.get(`${API_BASE_URL}/api/stats`)
+        setStats(response.data)
+      } catch (error) {
+        console.error('Error fetching stats:', error)
+        // Fallback data
+        setStats({ students: "5000+", courses: "6+", faculty: "25+", selection: "1000+" })
+      }
+    }
+    fetchStats()
   }, [])
 
   const statItems = [
@@ -21,7 +32,7 @@ const StatsSection = () => {
   ]
 
   return (
-    <section ref={ref} className="py-16 gold-gradient">
+    <section ref={ref} className="py-16 bg-gradient-to-r from-yellow-400 to-amber-600">
       <div className="container-custom">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {statItems.map((item, index) => (
@@ -45,4 +56,4 @@ const StatsSection = () => {
   )
 }
 
-export default StatsSection;
+export default StatsSection

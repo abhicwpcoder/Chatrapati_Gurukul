@@ -1,16 +1,24 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import axios from 'axios'
+import API_BASE_URL from '../../config/api'
 import { ChevronDown } from 'lucide-react'
 import SectionTitle from '../UI/SectionTitle'
-import API_BASE_URL from '../../config/api'
 
 const FAQSection = () => {
   const [faqs, setFaqs] = useState([])
   const [openIndex, setOpenIndex] = useState(null)
 
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/api/faq`).then(res => setFaqs(res.data))
+    const fetchFaqs = async () => {
+      try {
+        const response = await axios.get(`${API_BASE_URL}/api/faq`)
+        setFaqs(response.data)
+      } catch (error) {
+        console.error('Error fetching FAQs:', error)
+      }
+    }
+    fetchFaqs()
   }, [])
 
   return (
@@ -58,4 +66,4 @@ const FAQSection = () => {
   )
 }
 
-export default FAQSection;
+export default FAQSection
