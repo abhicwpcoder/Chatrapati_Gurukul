@@ -23,8 +23,8 @@ const BoysHostel = () => {
     <div className="pt-20">
       <div className="bg-gradient-to-r from-primary-dark to-primary py-20">
         <div className="container-custom text-center">
-          <motion.h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Boys Hostel</motion.h1>
-          <motion.p className="text-gray-300">A home away from home with modern amenities and security</motion.p>
+          <motion.h1 className="text-4xl md:text-5xl font-bold text-white mb-4">मुलांचे वसतिगृह</motion.h1>
+          <motion.p className="text-gray-300">आधुनिक सोयीसुविधा आणि सुरक्षिततेसह घरासारखेच वातावरण.</motion.p>
         </div>
       </div>
 
@@ -32,10 +32,10 @@ const BoysHostel = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} className="space-y-6">
-              <h2 className="text-3xl font-bold text-primary-dark">Comfortable & Secure Living</h2>
+              <h2 className="text-3xl font-bold text-primary-dark">सुरक्षित आणि सुखी जीवन</h2>
               <p className="text-gray-600">
-                Our boys hostel provides a safe, comfortable, and conducive environment for focused studying. 
-                With modern amenities, nutritious meals, and 24/7 security, we ensure students feel at home.
+                आमचे मुलांचे वसतिगृह एकाग्र अभ्यासासाठी सुरक्षित, आरामदायक आणि पोषक वातावरण प्रदान करते.
+आधुनिक सोयीसुविधा, पौष्टिक भोजन आणि २४/७ सुरक्षेसह, आम्ही विद्यार्थ्यांना घरासारखे वाटावे याची खात्री करतो.
               </p>
               <div className="grid gap-4">
                 {hostelData && (
@@ -47,7 +47,7 @@ const BoysHostel = () => {
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} className="rounded-2xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800" alt="Boys Hostel Room" className="w-full h-80 object-cover" />
+              <img src="./images/boys_hostel.jpeg" alt="Boys Hostel Room" className="w-full h-80 object-cover" />
             </motion.div>
           </div>
 

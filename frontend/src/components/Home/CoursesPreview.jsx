@@ -26,8 +26,8 @@ const CoursesPreview = () => {
     <section className="section-padding">
       <div className="container-custom">
         <SectionTitle 
-          title="Our Courses" 
-          subtitle="Comprehensive curriculum designed for academic excellence"
+          title="आमचे अभ्यासक्रम" 
+          subtitle="शैक्षणिक उत्कृष्टतेसाठी तयार केलेला सर्वसमावेशक अभ्यासक्रम"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {courses.map((course, idx) => (
@@ -38,7 +38,7 @@ const CoursesPreview = () => {
                 <p className="text-sm text-accent-gold font-semibold mb-2">{course.grades}</p>
                 <p className="text-gray-600 text-sm mb-4">{course.description}</p>
                 <Link to="/courses" className="text-primary-dark font-medium text-sm hover:text-accent-gold transition inline-flex items-center gap-1">
-                  Learn More <ArrowRight size={14} />
+                  अधिक जाणून घ्या <ArrowRight size={14} />
                 </Link>
               </div>
             </Card>
@@ -46,7 +46,7 @@ const CoursesPreview = () => {
         </div>
         <div className="text-center mt-10">
           <Link to="/courses" className="inline-flex items-center gap-2 bg-primary-dark text-white px-8 py-3 rounded-full hover:bg-primary transition">
-            View All Courses <ArrowRight size={18} />
+           सर्व अभ्यासक्रम पहा <ArrowRight size={18} />
           </Link>
         </div>
       </div>

@@ -1,16 +1,12 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { CheckCircle, ArrowRight } from 'lucide-react'
+import aboutPreviewData from '../../data/aboutPreview'
+import { features } from '../../data/aboutPreview'
 
 const AboutPreview = () => {
-  const features = [
-    "Coaching from 5th to 12th Standard",
-    "Experienced & Dedicated Faculty",
-    "Daily Tests & Doubt Solving Sessions",
-    "Board Exam & Competitive Preparation",
-    "Separate Boys & Girls Hostel",
-    "Modern Infrastructure & Smart Classes"
-  ]
+  const { title, url, description } = aboutPreviewData[0]
+  const {id, text} = features;
 
   return (
     <section className="section-padding bg-gray-50">
@@ -24,15 +20,13 @@ const AboutPreview = () => {
           >
             <span className="text-accent-gold font-semibold uppercase tracking-wide">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mt-2 mb-4">
-              Excellence in Education Since 2010
+              {title}
             </h2>
             <p className="text-gray-600 mb-6">
-              Chatrapati Gurukul is a premier coaching center and hostel dedicated to nurturing young minds 
-              from 5th to 12th standard. With a focus on holistic development, we provide quality 
-              education, state-of-the-art infrastructure, and separate hostel facilities for boys and girls.
+              {description}
             </p>
             <div className="grid sm:grid-cols-2 gap-3 mb-6">
-              {features.map((feature, index) => (
+              {features.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -42,12 +36,12 @@ const AboutPreview = () => {
                   className="flex items-center gap-2"
                 >
                   <CheckCircle size={18} className="text-accent-gold" />
-                  <span className="text-gray-700">{feature}</span>
+                  <span className="text-gray-700">{item.text}</span>
                 </motion.div>
               ))}
             </div>
             <Link to="/about" className="inline-flex items-center gap-2 text-primary-dark font-semibold hover:text-accent-gold transition">
-              Learn More About Us <ArrowRight size={18} />
+              आमच्याबद्दल अधिक जाणून घ्या <ArrowRight size={18} />
             </Link>
           </motion.div>
           
@@ -60,7 +54,7 @@ const AboutPreview = () => {
           >
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://as2.ftcdn.net/v2/jpg/07/49/40/01/1000_F_749400130_1CSPUXYKrk4JDR76KZ4l9ootcazxvUdX.jpg" 
+                src={url}
                 alt="Students in classroom"
                 className="w-full h-full object-cover"
               />

@@ -16,8 +16,8 @@ const Gallery = () => {
     <div className="pt-20">
       <div className="bg-gradient-to-r from-primary-dark to-primary py-20">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Gallery</h1>
-          <p className="text-gray-300">Glimpses of our campus, classrooms, and activities</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">गॅलरी</h1>
+          <p className="text-gray-300">आमच्या कॅम्पस, वर्गखोल्या आणि उपक्रमांची एक झलक</p>
         </div>
       </div>
 

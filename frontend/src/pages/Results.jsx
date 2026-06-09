@@ -15,8 +15,8 @@ const Results = () => {
     <div className="pt-20">
       <div className="bg-gradient-to-r from-primary-dark to-primary py-20">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Results</h1>
-          <p className="text-gray-300">Consistent academic excellence year after year</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">आमचे निकाल</h1>
+          <p className="text-gray-300">वर्षानुवर्षे सातत्यपूर्ण शैक्षणिक गुणवत्ता</p>
         </div>
       </div>
 
@@ -34,23 +34,23 @@ const Results = () => {
                 <div className="gold-gradient p-6 text-center">
                   <Trophy className="w-12 h-12 mx-auto text-primary-dark mb-2" />
                   <div className="text-4xl font-bold text-primary-dark">{result.percentage}</div>
-                  <div className="text-primary-dark/80">Pass Percentage</div>
+                  <div className="text-primary-dark/80">उत्तीर्णतेची टक्केवारी</div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-primary-dark text-center mb-4">Year {result.year}</h3>
+                  <h3 className="text-2xl font-bold text-primary-dark text-center mb-4">वर्ष {result.year}</h3>
                   <div className="space-y-2">
                     <div className="flex justify-between py-2 border-b">
-                      <span>Total Students:</span>
+                      <span>एकूण विद्यार्थी:</span>
                       <span className="font-semibold">{result.totalStudents}</span>
                     </div>
                     <div className="flex justify-between py-2 border-b">
-                      <span>Students Passed:</span>
+                      <span>उत्तीर्ण विद्यार्थी:</span>
                       <span className="font-semibold">{result.passed}</span>
                     </div>
                   </div>
                   <div className="mt-4 pt-4 border-t">
                     <h4 className="font-semibold text-primary-dark mb-2 flex items-center gap-2">
-                      <Award size={18} className="text-accent-gold" /> Top Performers
+                      <Award size={18} className="text-accent-gold" /> टॉप परफॉर्मर्स
                     </h4>
                     {result.toppers.map((topper, i) => (
                       <p key={i} className="text-gray-600">{topper}</p>
@@ -68,10 +68,11 @@ const Results = () => {
             className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 text-center"
           >
             <TrendingUp className="w-12 h-12 text-accent-gold mx-auto mb-3" />
-            <h3 className="text-2xl font-bold text-primary-dark mb-2">Consistent Growth</h3>
+            <h3 className="text-2xl font-bold text-primary-dark mb-2">सातत्यपूर्ण वाढ</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Our students consistently achieve outstanding results in board exams and competitive tests.
-              Join us to be a part of this success story.
+              आमचे विद्यार्थी बोर्ड परीक्षा आणि स्पर्धा परीक्षांमध्ये सातत्याने उत्कृष्ट निकाल मिळवतात.
+
+या यशोगाथेचा भाग होण्यासाठी आमच्यात सामील व्हा.
             </p>
           </motion.div>
         </div>

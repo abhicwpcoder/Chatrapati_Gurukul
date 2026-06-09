@@ -43,7 +43,7 @@ const ContactUs = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
-            Contact Us
+            आमच्याशी संपर्क साधा
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ const ContactUs = () => {
             transition={{ delay: 0.1 }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            Get in touch with us for any queries about admissions, courses, or hostel facilities
+            प्रवेश, अभ्यासक्रम किंवा वसतिगृह सुविधांविषयी कोणत्याही प्रश्नांसाठी आमच्याशी संपर्क साधा.
           </motion.p>
         </div>
       </div>
@@ -67,19 +67,19 @@ const ContactUs = () => {
               className="lg:col-span-1"
             >
               <div className="bg-white rounded-2xl shadow-lg p-6">
-                <h3 className="text-2xl font-bold text-primary-dark mb-6">Get in Touch</h3>
+                <h3 className="text-2xl font-bold text-primary-dark mb-6">संपर्कात रहा</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <MapPin className="text-accent-gold mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-primary-dark">Address</h4>
-                      <p className="text-gray-600 text-sm">Aryanandi Chauk, Karegaon Road, Parbhani(431401)</p>
+                      <h4 className="font-semibold text-primary-dark">पत्ता</h4>
+                      <p className="text-gray-600 text-sm">आर्यनंदी चौक, कारेगाव रोड, परभणी(४३१४०१)</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Phone className="text-accent-gold mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-primary-dark">Phone</h4>
+                      <h4 className="font-semibold text-primary-dark">फोन</h4>
                       <p className="text-gray-600">+91 8308403750</p>
                       <p className="text-gray-600">+91 8308979096</p>
                     </div>
@@ -87,7 +87,7 @@ const ContactUs = () => {
                   <div className="flex items-start gap-3">
                     <Mail className="text-accent-gold mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-primary-dark">Email</h4>
+                      <h4 className="font-semibold text-primary-dark">ईमेल</h4>
                       <p className="text-gray-600">info@chatrapatigurukul.co.in</p>
                       <p className="text-gray-600">admissions@chatrapatigurukul.co.in</p>
                     </div>
@@ -95,9 +95,9 @@ const ContactUs = () => {
                   <div className="flex items-start gap-3">
                     <Clock className="text-accent-gold mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-primary-dark">Working Hours</h4>
-                      <p className="text-gray-600">Monday - Saturday: 8:00 AM - 8:00 PM</p>
-                      <p className="text-gray-600">Sunday: Closed</p>
+                      <h4 className="font-semibold text-primary-dark">कामाचे तास</h4>
+                      <p className="text-gray-600">सोमवार ते शनिवार: सकाळी ८:०० ते रात्री ८:००</p>
+                      <p className="text-gray-600">रविवार: बंद</p>
                     </div>
                   </div>
                 </div>
@@ -112,10 +112,10 @@ const ContactUs = () => {
               className="lg:col-span-2"
             >
               <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-primary-dark mb-6">Send us a Message</h3>
+                <h3 className="text-2xl font-bold text-primary-dark mb-6">आम्हाला संदेश पाठवा</h3>
                 {submitted && (
                   <div className="mb-4 p-3 bg-green-100 text-green-700 rounded-lg">
-                    Thank you! We'll get back to you soon.
+                    धन्यवाद! तुम्ही WhatsApp बटन दाबून आमच्याशी संपर्क साधू शकता. आम्ही लवकरच तुमच्याशी संपर्क साधू.
                   </div>
                 )}
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -173,7 +173,7 @@ const ContactUs = () => {
                     disabled={loading}
                     className="gold-gradient text-primary-dark font-semibold px-8 py-3 rounded-lg flex items-center gap-2 hover:shadow-lg transition disabled:opacity-50"
                   >
-                    {loading ? 'Sending...' : 'Send Message'} <Send size={18} />
+                    {loading ? 'पाठवत आहे...' : 'संदेश पाठवा'} <Send size={18} />
                   </button>
                 </form>
               </div>

@@ -43,8 +43,8 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-gray-300 text-lg mb-8"
             >
-              Best Coaching Institute for Classes 5th to 12th with Separate Hostel Facilities for Boys & Girls. 
-              Join 5000+ successful students.
+              इयत्ता ५ वी ते १२ वी साठी सर्वोत्तम कोचिंग संस्था, मुला-मुलींसाठी स्वतंत्र वसतिगृह सुविधेसह.
+२०००+ यशस्वी विद्यार्थ्यांमध्ये सामील व्हा.
             </motion.p>
             
             <motion.div 
@@ -69,8 +69,8 @@ const Hero = () => {
             className="hidden lg:grid grid-cols-2 gap-6"
           >
             {[
-              { icon: Award, value: "5000+", label: "Students Trained", color: "from-yellow-400 to-orange-500" },
-              { icon: Users, value: "25+", label: "Expert Faculty", color: "from-blue-400 to-cyan-500" },
+              { icon: Award, value: "2000+", label: "Students Trained", color: "from-yellow-400 to-orange-500" },
+              { icon: Users, value: "5+", label: "Expert Faculty", color: "from-blue-400 to-cyan-500" },
               { icon: BookOpen, value: "6+", label: "Courses", color: "from-green-400 to-emerald-500" },
               { icon: Award, value: "1000+", label: "Selections", color: "from-purple-400 to-pink-500" }
             ].map((stat, index) => (

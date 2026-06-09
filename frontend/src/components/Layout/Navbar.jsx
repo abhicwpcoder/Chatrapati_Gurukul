@@ -35,9 +35,9 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center h-16 md:h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <GraduationCap className="w-8 h-8 text-accent-gold" />
+            <img src="./images/Logo.png" alt="Logo" className="w-8 h-8 text-accent-gold" />
             <span className="text-xl font-bold text-white">
-              Chatrapati<span className="text-accent-gold">Gurukul</span>
+              छत्रपती<span className="text-accent-gold">गुरुकुल</span>
             </span>
           </Link>
 

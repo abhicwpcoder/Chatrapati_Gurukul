@@ -17,8 +17,8 @@ const Faculty = () => {
     <div className="pt-20">
       <div className="bg-gradient-to-r from-primary-dark to-primary py-20">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Faculty</h1>
-          <p className="text-gray-300">Meet our experienced and dedicated team of educators</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">आमची फॅकल्टी</h1>
+          <p className="text-gray-300">आमच्या अनुभवी आणि समर्पित शिक्षक संघाला भेटा.</p>
         </div>
       </div>
 

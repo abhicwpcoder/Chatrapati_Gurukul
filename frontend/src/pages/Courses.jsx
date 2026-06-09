@@ -22,7 +22,7 @@ const Courses = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
-            Our Courses
+            आमचे अभ्यासक्रम
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ const Courses = () => {
             transition={{ delay: 0.1 }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            Comprehensive programs designed for academic excellence and competitive success
+            शैक्षणिक उत्कृष्टता आणि स्पर्धात्मक यशासाठी तयार केलेले सर्वसमावेशक कार्यक्रम
           </motion.p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const Courses = () => {
                   <p className="text-accent-gold font-semibold mb-3">{course.grades}</p>
                   <p className="text-gray-600 mb-4">{course.description}</p>
                   <div className="border-t pt-4">
-                    <h4 className="font-semibold text-primary-dark mb-2">Key Features:</h4>
+                    <h4 className="font-semibold text-primary-dark mb-2">मुख्य वैशिष्ट्ये:</h4>
                     <ul className="space-y-2">
                       {course.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2 text-sm text-gray-600">

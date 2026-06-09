@@ -24,8 +24,8 @@ const GirlsHostel = () => {
     <div className="pt-20">
       <div className="bg-gradient-to-r from-primary-dark to-primary py-20">
         <div className="container-custom text-center">
-          <motion.h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Girls Hostel</motion.h1>
-          <motion.p className="text-gray-300">Safe, secure, and empowering environment for girls</motion.p>
+          <motion.h1 className="text-4xl md:text-5xl font-bold text-white mb-4">मुलींचे वसतिगृह</motion.h1>
+          <motion.p className="text-gray-300">मुलींसाठी सुरक्षित, संरक्षित आणि सक्षमीकरण करणारे वातावरण</motion.p>
         </div>
       </div>
 
@@ -33,14 +33,16 @@ const GirlsHostel = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} className="order-2 lg:order-1">
-              <img src="https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800" alt="Girls Hostel Room" className="rounded-2xl shadow-xl w-full" />
+              <img src="./images/boys_hostel.jpeg" alt="Girls Hostel Room" className="rounded-2xl shadow-xl w-full" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} className="order-1 lg:order-2 space-y-6">
-              <h2 className="text-3xl font-bold text-primary-dark">Empowering Young Women</h2>
+              <h2 className="text-3xl font-bold text-primary-dark">तरुण महिलांना सक्षम करणे</h2>
               <p className="text-gray-600">
-                Our girls' hostel provides a nurturing environment with all modern amenities, 
-                ensuring safety and comfort. With lady wardens and strict security protocols, 
-                parents can have complete peace of mind.
+                आमचे मुलींचे वसतिगृह सर्व आधुनिक सोयीसुविधांसह एक पोषक वातावरण प्रदान करते,
+
+जे सुरक्षितता आणि आराम सुनिश्चित करते. महिला वॉर्डन आणि कडक सुरक्षा नियमांमुळे,
+
+पालक पूर्णपणे निश्चिंत राहू शकतात. नियमित आरोग्य तपासणी आणि पोषणयुक्त आहार यामुळे विद्यार्थ्यांचे सर्वांगीण विकास सुनिश्चित होतो.
               </p>
               {hostelData && (
                 <div className="bg-gray-50 p-4 rounded-xl">
