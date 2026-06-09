@@ -35,6 +35,7 @@ app.use(cors({
   },
   credentials: true
 }));
+app.use('/Images', express.static(path.join(__dirname, 'public/Images')));
 app.use(express.json());
 app.use(express.static('public'));
 
