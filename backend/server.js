@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
-  'https://chatrapati-gurukul.vercel.app/' // Replace with your Vercel URL
+  'https://chatrapati-gurukul.vercel.app' // Replace with your Vercel URL
 ];
 
 app.use(cors({
@@ -35,7 +35,7 @@ app.use(cors({
   },
   credentials: true
 }));
-app.use('/Images', express.static(path.join(__dirname, 'public/Images')));
+app.use('/images', express.static(path.join(process.cwd(), 'backend/public/images')));
 app.use(express.json());
 app.use(express.static('public'));
 
