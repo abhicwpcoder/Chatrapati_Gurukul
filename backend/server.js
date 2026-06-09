@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
-  'https://your-frontend-domain.vercel.app' // Replace with your Vercel URL
+  'https://chatrapati-gurukul.vercel.app/' // Replace with your Vercel URL
 ];
 
 app.use(cors({
