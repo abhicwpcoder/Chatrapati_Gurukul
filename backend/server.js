@@ -38,20 +38,21 @@ app.use(cors({
 
 import fs from "fs";
 
-app.get("/debug-images", (req, res) => {
-  const imageDir = path.join(__dirname, "public/images");
+app.get('/debug-images', (req, res) => {
+  const imagePath = path.join(__dirname, 'public/images');
 
   res.json({
-    __dirname,
-    imageDir,
-    exists: fs.existsSync(imageDir),
-    files: fs.existsSync(imageDir)
-      ? fs.readdirSync(imageDir)
+    dirname: __dirname,
+    cwd: process.cwd(),
+    imagePath,
+    exists: fs.existsSync(imagePath),
+    files: fs.existsSync(imagePath)
+      ? fs.readdirSync(imagePath)
       : []
   });
 });
 
-app.use('/images', express.static(path.join(process.cwd(), 'backend/public/images')));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use(express.json());
 app.use(express.static('public'));
 
