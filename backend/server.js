@@ -39,7 +39,7 @@ app.use(cors({
 import fs from "fs";
 
 app.get('/debug-images', (req, res) => {
-  const imagePath = path.join(__dirname, 'public/images');
+  const imagePath = path.join(__dirname, 'Public/Images');
 
   res.json({
     dirname: __dirname,
@@ -52,9 +52,9 @@ app.get('/debug-images', (req, res) => {
   });
 });
 
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
+app.use('/images', express.static(path.join(__dirname, 'Public/Images')));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('Public'));
 
 // Routes
 app.get('/api/courses', (req, res) => {
