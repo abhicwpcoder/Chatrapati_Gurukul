@@ -24,7 +24,7 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="inline-block px-4 py-2 bg-accent-gold/20 rounded-full mb-6"
             >
-              <span className="text-accent-gold font-semibold">Since 2010 | CBSE Affiliated</span>
+              <span className="text-accent-gold font-semibold">Since 2024 | CBSE Affiliated</span>
             </motion.div>
             
             <motion.h1 
@@ -43,8 +43,8 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-gray-300 text-lg mb-8"
             >
-              इयत्ता ५ वी ते १२ वी साठी सर्वोत्तम कोचिंग संस्था, मुला-मुलींसाठी स्वतंत्र वसतिगृह सुविधेसह.
-२०००+ यशस्वी विद्यार्थ्यांमध्ये सामील व्हा.
+              इयत्ता 5 वी ते 10 वी साठी सर्वोत्तम कोचिंग संस्था, मुला-मुलींसाठी स्वतंत्र वसतिगृह सुविधेसह.
+100+ यशस्वी विद्यार्थ्यांमध्ये सामील व्हा.
             </motion.p>
             
             <motion.div 
@@ -69,10 +69,10 @@ const Hero = () => {
             className="hidden lg:grid grid-cols-2 gap-6"
           >
             {[
-              { icon: Award, value: "2000+", label: "Students Trained", color: "from-yellow-400 to-orange-500" },
+              { icon: Award, value: "100+", label: "Students Trained", color: "from-yellow-400 to-orange-500" },
               { icon: Users, value: "5+", label: "Expert Faculty", color: "from-blue-400 to-cyan-500" },
               { icon: BookOpen, value: "6+", label: "Courses", color: "from-green-400 to-emerald-500" },
-              { icon: Award, value: "1000+", label: "Selections", color: "from-purple-400 to-pink-500" }
+              { icon: Award, value: "", label: "Selections", color: "from-purple-400 to-pink-500" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

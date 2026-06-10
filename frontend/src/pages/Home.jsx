@@ -79,7 +79,7 @@ const Home = () => {
       </section>
       
       {/* Testimonials Section */}
-      <section className="section-padding">
+      {/* <section className="section-padding">
         <div className="container-custom">
           <SectionTitle 
             title="What Parents Say" 
@@ -112,7 +112,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
       
       <FAQSection />
       

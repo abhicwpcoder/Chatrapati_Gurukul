@@ -60,7 +60,7 @@ const AboutPreview = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-accent-gold rounded-xl p-4 shadow-xl">
-              <div className="text-primary-dark font-bold text-2xl">5000+</div>
+              <div className="text-primary-dark font-bold text-2xl">100+</div>
               <div className="text-primary-dark text-sm">Students Trained</div>
             </div>
           </motion.div>

@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="bg-gradient-to-r from-primary-dark to-primary py-20">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">छत्रपती गुरुकुल बद्दल</h1>
-          <p className="text-gray-300">२०१० पासून तरुण मनांना सक्षम बनवत आहे.</p>
+          <p className="text-gray-300">2024 पासून तरुण मनांना सक्षम बनवत आहे.</p>
         </div>
       </div>
 
@@ -23,12 +23,12 @@ const AboutUs = () => {
             <div>
               <h2 className="text-3xl font-bold text-primary-dark mb-4">आमचा उत्कृष्टतेचा प्रवास</h2>
               <p className="text-gray-600 mb-4">
-                शिक्षणात परिवर्तन घडवण्याच्या दूरदृष्टीने छत्रपती गुरुकुलची स्थापना २०१० साली झाली.
+                शिक्षणात परिवर्तन घडवण्याच्या दूरदृष्टीने छत्रपती गुरुकुलची स्थापना 2024 साली झाली.
 
-                केवळ ५० विद्यार्थ्यांपासून सुरुवात करून, आज आम्ही 2००० हून अधिक यशस्वी विद्यार्थ्यांसह एक अग्रगण्य संस्था म्हणून नावारूपाला आलो आहोत.
+                केवळ 2 विद्यार्थ्यांपासून सुरुवात करून, आज आम्ही 100 हून अधिक यशस्वी विद्यार्थ्यांसह एक अग्रगण्य संस्था म्हणून नावारूपाला आलो आहोत.
               </p>
               <p className="text-gray-600 mb-6">
-                आम्ही इयत्ता ५ वी ते १२ वी पर्यंत सर्वसमावेशक शिकवणी देतो, ज्यामध्ये संकल्पनांची स्पष्टता आणि परीक्षेच्या तयारीवर लक्ष केंद्रित केले जाते. मुला-मुलींसाठी असलेल्या आमच्या स्वतंत्र वसतिगृह सुविधांमुळे सुरक्षित आणि पोषक शैक्षणिक वातावरण सुनिश्चित होते.
+                आम्ही इयत्ता 5 वी ते 10 वी पर्यंत सर्वसमावेशक शिकवणी देतो, ज्यामध्ये संकल्पनांची स्पष्टता आणि परीक्षेच्या तयारीवर लक्ष केंद्रित केले जाते. मुला-मुलींसाठी असलेल्या आमच्या स्वतंत्र वसतिगृह सुविधांमुळे सुरक्षित आणि पोषक शैक्षणिक वातावरण सुनिश्चित होते.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {["अनुभवी प्राध्यापक वर्ग", "आधुनिक पायाभूत सुविधा", "सिद्ध झालेले परिणाम", "सर्वांगीण विकास"].map((item) => (
@@ -42,7 +42,7 @@ const AboutUs = () => {
             <div className="relative">
               <img src="./images/broucher.jpeg" alt="About Us" className="rounded-2xl shadow-2xl" />
               <div className="absolute -bottom-6 -left-6 bg-accent-gold rounded-xl p-4">
-                <div className="text-3xl font-bold text-primary-dark">14+</div>
+                <div className="text-3xl font-bold text-primary-dark">2+</div>
                 <div className="text-primary-dark">उत्कृष्टतेची वर्षे</div>
               </div>
             </div>

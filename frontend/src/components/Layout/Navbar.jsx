@@ -23,8 +23,8 @@ const Navbar = () => {
     { path: '/girls-hostel', name: 'Girls Hostel' },
     { path: '/faculty', name: 'Faculty' },
     { path: '/gallery', name: 'Gallery' },
-    { path: '/results', name: 'Results' },
-    { path: '/testimonials', name: 'Testimonials' },
+    // { path: '/results', name: 'Results' },
+    // { path: '/testimonials', name: 'Testimonials' },
     { path: '/contact', name: 'Contact' },
   ]
 

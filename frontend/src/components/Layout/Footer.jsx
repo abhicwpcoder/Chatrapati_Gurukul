@@ -14,7 +14,7 @@ const Footer = () => {
               Chatrapati<span className="text-accent-gold">Gurukul</span>
             </h3>
             <p className="text-gray-300 mb-4">
-              Excellence in education since 2010. Shaping young minds for a brighter future.
+              Excellence in education since 2024. Shaping young minds for a brighter future.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-accent-gold transition-colors">

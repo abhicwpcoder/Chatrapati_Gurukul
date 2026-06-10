@@ -18,17 +18,17 @@ const StatsSection = () => {
       } catch (error) {
         console.error('Error fetching stats:', error)
         // Fallback data
-        setStats({ students: "2000+", courses: "6+", faculty: "5+", selection: "1000+" })
+        setStats({ students: "100+", courses: "6+", faculty: "5+", selection: "" })
       }
     }
     fetchStats()
   }, [])
 
   const statItems = [
-    { icon: Users, value: stats.students || "2000+", label: "Students Trained" },
+    { icon: Users, value: stats.students || "100+", label: "Students Trained" },
     { icon: BookOpen, value: stats.courses || "6+", label: "Courses Offered" },
     { icon: Award, value: stats.faculty || "5+", label: "Expert Faculty" },
-    { icon: Trophy, value: stats.selection || "1000+", label: "Selections" },
+    { icon: Trophy, value: stats.selection || "", label: "Selections" },
   ]
 
   return (
